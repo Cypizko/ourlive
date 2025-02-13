@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Наша история</title>
+
+    <!-- Подключаем стили -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Подключаем Leaflet (карта) -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <script defer src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+
+    <!-- Подключаем JavaScript -->
+    <script defer src="script.js"></script>
+
+	 <link rel="icon" type="image/x-icon" href="images/heart-icon.ico">
+</head>
+<body>
+	<audio id="background-music" src="images/sunny.mp3" autoplay loop></audio>
+<!-- Заголовок -->
+<section class="hero">
+	<div class="hero-content">
+		 <h1>С Днём Святого Валентина, любимая! 💖</h1>
+		 <p>Ты — свет в моем мире. Пусть каждый день с тобой будет полон радости и любви.</p>
+		 <a href="#" class="hero-button" disabled>Люблю тебя</a>
+	</div>
+</section>
+
+
+    <section class="memory">
+		<p>48°32'57.6"N 34°22'54.1"E <br>
+			Тебе это говорит о чём то? <br>
+			Но что же это???
+		</p>
+
+  </section>
+
+    <!-- Карта -->
+    <section id="map-section">
+        <div id="map-container">
+            <div id="map"></div>
+        </div>
+    </section>
+
+    <!-- Воспоминания -->
+	 <section class="memory">
+		<span class="date">08.03.2023</span>
+		<p>Именно в этот день я встретил тебя</p>
+  </section>
+
+    <section class="memory">
+        <span class="date">12.03.2023</span>
+        <img src="images/photo1.jpg" alt="Наше фото">
+        <p>Может это было не очень романтично, но главное, что это случилось</p>
+    </section>
+
+    <section class="memory reverse">
+        <span class="date">13.03.2023</span>
+        <p>Первое фото, где я почти смог запечетлить свою красотулю</p>
+        <img src="images/photo2.jpg" alt="Наше фото">
+    </section>
+
+    <section class="memory">
+        <span class="date">05.04.2023</span>
+        <img src="images/photo3.jpg" alt="Наше фото">
+        <p>Очень много воспоминаний в этом лесу)</p>
+    </section>
+
+	 <section class="memory">
+		<span class="date">09.04.2023</span>
+		<p>Неужели? Да, это наше первое совместное фото</p>
+		<img src="images/photo4.jpg" alt="Наше фото">
+  </section>
+
+  <section class="memory">
+	<span class="date">11.04.2023</span>
+	<img src="images/photo5.jpg" alt="Наше фото">
+	<p>Ура, ты позволила выставить фотку в инстаграм.<br>Тогда после школы было очень холодно</p>
+</section>
+
+<section class="memory">
+	<span class="date">11.04.2023</span>
+	<p>Муехехе, дед инсайдики</p>
+	<img src="images/photo6.jpg" alt="Наше фото">
+</section>
+
+<section class="memory">
+	<span class="date">14.04.2023</span>
+	<img src="images/photo7.jpg" alt="Наше фото">
+	<p>О, это же наша прогулка в Сочи.<br>Всё ещё стесняешься)</p>
+</section>
+
+<section class="memory">
+	<span class="date">15.04.2023</span>
+	<img src="images/photo8.jpg" alt="Наше фото">
+	<p>Ура, мы впервые дома вместе, это так романтично</p>
+</section>
+
+<section class="memory">
+	<span class="date">15.04.2023</span>
+	<p>Эмм, романтично??)</p>
+	<img src="images/photo9.jpg" alt="Наше фото">
+</section>
+
+<section class="memory">
+	<span class="date">18.04.2023</span>
+	<img src="images/photo10.jpg" alt="Наше фото">
+	<p>Боже, какие мы красивые)</p>
+</section>
+
+<!--------------------------------->
+
+<section class="memory">
+	<span class="date">24.04.2023</span>
+	<p>Моей бабушке очень понравилась эта фотка)</p>
+	<img src="images/photo11.jpg" alt="Наше фото">
+</section>
+
+<section class="memory">
+	<span class="date">24.04.2023</span>
+	<img src="images/photo12.jpg" alt="Наше фото">
+	<p>А мне эта чуть больше</p>
+</section>
+
+<section class="memory">
+	<span class="date">24.04.2023</span>
+	<p>Ммм, вкусненько было</p>
+	<img src="images/photo13.jpg" alt="Наше фото">
+</section>
+
+<section class="memory">
+	<span class="date">28.04.2023</span>
+	<img src="images/photo14.jpg" alt="Наше фото">
+	<p>Пхпхпхх, твой пездюк</p>
+</section>
+
+<section class="memory">
+	<span class="date">02.05.2023</span>
+	<p>Такие милашки)</p>
+	<img src="images/photo15.jpg" alt="Наше фото">
+</section>
+
+<section class="memory">
+	<span class="date">13.05.2023</span>
+	<img src="images/photo16.jpg" alt="Наше фото">
+	<p>Фууу, мы алкаши</p>
+</section>
+
+<section class="memory">
+	<span class="date">01.06.2023</span>
+	<p>Без тебя этот день был бы уже не таким классным)</p>
+	<img src="images/photo17.jpg" alt="Наше фото">
+</section>
+
+<section class="memory">
+	<span class="date">12.06.2023</span>
+	<img src="images/photo18.jpg" alt="Наше фото">
+	<p>Валерчик, он всегда будет защищать тебя, когда я далеко</p>
+</section>
+
+<section class="memory">
+	<span class="date">24.06.2023</span>
+	<p>Спасибо, что была со мной в этот день)</p>
+	<img src="images/photo19.jpg" alt="Наше фото">
+</section>
+
+<section class="memory">
+	<span class="date">24.06.2023</span>
+	<img src="images/photo20.jpg" alt="Наше фото">
+	<p>Ты была как всегда неотразима)</p>
+</section>
+
+<section class="memory">
+	<span class="date">24.06.2023</span>
+	<p>Этот взгляд поможет мне в самые тяжёлые моменты.</p>
+	<img src="images/photo21.jpg" alt="Наше фото">
+</section>
+
+<section class="memory">
+	<span class="date">01.07.2023</span>
+	<img src="images/photo22.jpg" alt="Наше фото">
+	<p>Встреча после нашего первого расставания)<br>Кто бы мог подумать, что этo<br>лишь малая часть того, что нам стоит пережить</p>
+</section>
+
+<section class="memory">
+	<span class="date">05.07.2023</span>
+	<p>Мы тут такие мокрые и счастливые)</p>
+	<img src="images/photo23.jpg" alt="Наше фото">
+</section>
+
+<section class="memory">
+	<span class="date">07.07.2023</span>
+	<img src="images/photo24.jpg" alt="Наше фото">
+	<p>Боже, я не могу, одна из самых любимых фоток)</p>
+</section>
+
+<section class="memory">
+	<span class="date">07.07.2023</span>
+	<p>Почти мой размерчик</p>
+	<img src="images/photo25.jpg" alt="Наше фото">
+</section>
+
+<section class="memory">
+	<span class="date">17.08.2023</span>
+	<img src="images/photo26.jpg" alt="Наше фото">
+	<p>Пакрасилась)<br>Очень милый цветочек</p>
+</section>
+
+<section class="memory">
+	<span class="date">01.09.2023</span>
+	<p>А вот теперь уже моя очередь</p>
+	<img src="images/photo27.jpg" alt="Наше фото">
+</section>
+
+<section class="memory">
+	<span class="date">14.01.2024</span>
+	<p>Даже в самые холодные дни ты согревала меня лучше всего.</p>
+	<img src="images/photo29.jpg" alt="Наше фото">
+</section>
+
+<section class="memory">
+	<span class="date">03.05.2024</span>
+	<img src="images/photo30.jpg" alt="Наше фото">
+	<p>Ты ж моя чистюля)</p>
+</section>
+
+<section class="memory">
+	<span class="date">02.06.2024</span>
+	<p>Ты помогаешь мне бороть свои страхи</p>
+	<img src="images/photo31.jpg" alt="Наше фото">
+</section>
+
+<section class="memory">
+	<span class="date">19.12.2024</span>
+	<img src="images/photo34.jpg" alt="Наше фото">
+	<p>И делаешь мою жизнь ярче</p>
+</section>
+
+<!-- Финальная секция -->
+<section class="finale">
+	<div class="content">
+		 <h1>Навеки вместе 💞</h1>
+		 <p>С Днём Святого Валентина, любимая! Ты — лучшая часть моей жизни. Пусть наша история продолжается, наполняя каждый день счастьем и любовью.</p>
+		 <a href="#" class="button" disabled>Всегда с тобой</a>
+	</div>
+</section>
+
+
+
+
+    <!-- Прерывистый слайдер -->
+    <div class="slider">
+		  <div class="slider-dot"></div>
+		  <div class="slider-dot"></div>
+		  <div class="slider-dot"></div>
+		  <div class="slider-dot"></div>
+		  <div class="slider-dot"></div>
+		  <div class="slider-dot"></div>
+		  <div class="slider-dot"></div>
+		  <div class="slider-dot"></div>
+		  <div class="slider-dot"></div>
+		  <div class="slider-dot"></div>
+		  <div class="slider-dot"></div>
+		  <div class="slider-dot"></div>
+		  <div class="slider-dot"></div>
+		  <div class="slider-dot"></div>
+		  <div class="slider-dot"></div>
+		  <div class="slider-dot"></div>
+		  <div class="slider-dot"></div>
+		  <div class="slider-dot"></div>
+		  <div class="slider-dot"></div>
+		  <div class="slider-dot"></div>
+		  <div class="slider-dot"></div>
+		  <div class="slider-dot"></div>
+		  <div class="slider-dot"></div>
+		  <div class="slider-dot"></div>
+		  <div class="slider-dot"></div>
+		  <div class="slider-dot"></div>
+		  <div class="slider-dot"></div>
+		  <div class="slider-dot"></div>
+		  <div class="slider-dot"></div>
+		  <div class="slider-dot"></div>
+		  <div class="slider-dot"></div>
+		  <div class="slider-dot"></div>
+		  <div class="slider-dot"></div>
+		  <div class="slider-dot"></div>
+    </div>
+
+</body>
+</html>
